@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin-top: 25px;
+    width: 100%;
+
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    height: 500px;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.first {
+    width: 80%;
+    height: 450px;
+    padding: 10px 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.first h1 {
+    color: white;
+    margin-bottom: 8px;
+    font-family: monospace;
+}
+.first img {
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+.first p {
+    color: white;
+    width: 85%;
+    height: 280px;
+    font-size: 20px;
+}
+
+.item1 {
+    background-color: hsl(31, 77%, 52%);
+}
+.item2 {
+    background-color: hsl(184, 100%, 22%);
+}
+.item3 {
+    background-color: hsl(179, 100%, 13%);
+}
+.item1 button {
+    color: hsl(31, 77%, 52%) ;
+}
+.item2 button {
+    color: hsl(184, 100%, 22%) ;
+}
+.item3 button {
+    color: hsl(179, 100%, 13%) ;
+}
+button {
+    padding: 5px 10px;
+    border-radius: 13px ;
+    border-color: white;
+    background-color: white ; 
+    cursor: pointer;
+}
+@media screen and (max-width:780px) {
+    body {
+        width: 100%;
+    }
+    main {
+        display: flex;
+        flex-direction: row;
+        width: 98%;
+        height: 500px;
+        justify-content: center;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .first {
+        height: 450px;
+        padding: 20px 25px;
+
+    }
+    .first button {
+        position: relative;
+        bottom: 0%;
+    }
+
+}
