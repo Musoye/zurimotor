@@ -1,60 +1,44 @@
-* {
+*  {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-main {
-    margin-top: 45px;
-    display: grid;
-    height: 400px;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    grid-template-areas: 'a b c';
+body {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
 }
-
-.first h1 {
-    color: white;
-    margin-bottom: 8px;
-    font-family: monospace;
+#parent div {
+    padding: 40px;
 }
-
 .item1 {
-    background-color: hsl(31, 77%, 52%);
+    background: red;
     grid-area: a;
-    padding: 15px 20px;
 }
 .item2 {
-    background-color: hsl(184, 100%, 22%);
+    background-color: yellow;
     grid-area: b;
-    padding: 15px 20px;
 }
 .item3 {
-    background-color: hsl(179, 100%, 13%);
+    background-color: green;
     grid-area: c;
-    padding: 15px 20px;
 }
-.item1 button {
-    color: hsl(31, 77%, 52%) ;
+.item4 {
+    background-color: blue;
+    grid-area: d;
 }
-.item2 button {
-    color: hsl(184, 100%, 22%) ;
+.item5 {
+    background-color: lightblue;
+    grid-area: e;
 }
-.item3 button {
-    color: hsl(179, 100%, 13%) ;
+#parent {
+    display: grid;
+    grid-template-areas: 
+    'a a b'
+     'c d d' 
+     'c e e';
+    gap: 10px;
 }
-.first img {
-    margin-bottom: 25px;
-}
-.first p {
-    color: white;
-    font-size: 19px;
-    margin-bottom: 40px;
-}
-button {
-    padding: 5px 10px;
-    border-radius: 13px ;
-    border-color: white;
-    background-color: white ; 
-    cursor: pointer;
-}
+
+
